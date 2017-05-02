@@ -1,0 +1,384 @@
+
+/********************
+** BASIC SETUP  **
+*********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  color: #555;
+  font-family: 'roboto', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/************************
+** REUSABLE COMPONENTS **
+************************/
+
+/****** LAYOUT STYLES ******/
+
+.row {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section, footer {
+  padding: 80px 0;
+}
+
+/****** TYPOGRAPHY STYLES ******/
+
+@font-face {
+  font-family: 'nexa_boldregular';
+  src: url('fonts/Nexa_Free_Bold-webfont.eot');
+  src: url('fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Nexa_Free_Bold-webfont.woff2') format('woff2'),
+       url('fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
+       url('fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+       url('fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3em;
+  font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+h3 {
+  font-size: .9em;
+  font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/************************
+**   HEADER SECTION   **
+************************/
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('../img/Hero-bg.jpg');
+}
+
+nav {
+  position: relative;
+  height: 90px;
+  margin-top: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  height: 90px;
+  width: 90px;
+  fill: #ef463f;
+  cursor: pointer;
+  z-index: 20;
+  transition: all .5s ease;
+
+}
+
+.logo-menu-open {
+  fill: #FFF;
+}
+.logo-menu-open:hover {
+  fill: #8f2823;
+}
+
+.logo:hover {
+  -webkit-transform: rotate(360deg);
+
+}
+
+/********* Button Nav When Active Class is not applied **********/
+
+.menu-button-container {
+  position: absolute;
+  top: 28px;
+  right: 10%;
+  width: 34px;
+  height: 34px;
+  float: right;
+  z-index: 20;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.menu-button-container span {
+  position: absolute;
+  background-color: #FFF;
+  height: 3px;
+  width: 100%;
+  z-index: 300;
+  transition: all .25s;
+}
+
+.menu-button-top {
+  top: 0;
+  width: 80%;
+  transition: background-color .25s;
+}
+.menu-button-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-button-bottom {
+  bottom: 0;
+}
+
+/********* When Hover on button **********/
+
+.menu-button-container:hover span { background-color: #ef463f; }
+.menu-button-container:hover .menu-button-top { top: 10px; left:  }
+.menu-button-container:hover .menu-button-bottom { bottom: 10px; }
+
+/********* Button Nav with Active Class is Applied **********/
+
+.menu-button-container.active:hover {
+  transform: rotate(360deg);
+}
+.menu-button-container.active:hover span {
+  background-color: #8f2823;
+}
+
+.menu-button-container.active:hover .menu-button-top { top: 0; }
+.menu-button-container.active:hover .menu-button-bottom { bottom: 0; }
+
+/********* Making The X **********/
+
+.menu-button-container.active .menu-button-top {
+  transform: translateY(16px) translateX(0) rotate(45deg);
+  background-color: #FFF;
+}
+.menu-button-container.active .menu-button-middle {
+  opacity: 0;
+}
+.menu-button-container.active .menu-button-bottom {
+  transform: translateY(-16px) translateX(0) rotate(-45deg);
+  background-color: #FFF;
+}
+
+/********* FULL SCREEN NAVIGATION **********/
+
+/********** When The Navigation Is closed ***********/
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #ef463f;
+  z-index: 10;
+  height: 0%; /* initial state*/
+  opacity: 0; /* initial state*/
+  visibility: hidden; /* initial state*/
+  transition: opacity .35s, visibility .35s, height .35s;
+}
+
+.main-nav {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  height: 60%;
+  transform: translateY(-50%);
+}
+
+.main-nav ul {
+  list-style: none;
+  height: 100%;
+}
+
+.main-nav ul li {
+  position: relative;
+  min-height: 50px;
+  height: 25%;
+  height: calc(100% / 4);
+  opacity: 0;
+}
+
+.main-nav ul li a {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 4em;
+  transform: scale(1);
+  transition: all .25s;
+  font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+.main-nav ul li a:hover {
+  letter-spacing: 8px;
+  transform: scale(1.1);
+  color: #8f2823;
+}
+
+.social-nav {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.social-nav ul {
+  list-style: none;
+  height: 100%;
+}
+
+.social-nav ul li {
+  position: relative;
+  opacity: 0;
+  display: inline-block;
+  height: 100%;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+.social-nav ul li a {
+  height: 100%;
+  display: inline-block;
+}
+
+.social-nav li svg {
+  width: 40px;
+  height: auto;
+  fill: #8f2823;
+  transition: all .25s ease;
+}
+
+.social-nav li svg:hover {
+  fill: #FFF;
+  transform: rotate(360deg);
+}
+
+
+/********** When The Navigation Is Open ***********/
+
+/*** Menu Navigation Entrance Animation ***/
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+}
+
+.menu-overlay.open .main-nav li,
+.menu-overlay.open .social-nav li {
+  animation: fadeInRight .5s ease forwards;
+}
+
+.menu-overlay.open .main-nav li:nth-of-type(1) {
+  animation-delay: .4s;
+}
+.menu-overlay.open .main-nav li:nth-of-type(2) {
+  animation-delay: .45s;
+}
+.menu-overlay.open .main-nav li:nth-of-type(3) {
+  animation-delay: .5s;
+}
+.menu-overlay.open .main-nav li:nth-of-type(4) {
+  animation-delay: .55s;
+}
+.menu-overlay.open .social-nav li:nth-of-type(1) {
+  animation-delay: 1s;
+}
+.menu-overlay.open .social-nav li:nth-of-type(2) {
+  animation-delay: 1.2s;
+}
+
+
+
+/********* HERO TEXT BOX **********/
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.hero-main-heading {
+  text-transform: uppercase;
+  color: #ef463f;
+  letter-spacing: 12px;
+}
+
+.hero-main-heading span { color: #FFF; }
+
+.hero-sub-heading {
+  color: #FFF;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.hero-sub-heading span { color: #ef463f; }
+
+
+
+
+/********* SCROLL DOWN BUTTON **********/
+
+/*** Bouncing Arrow animation ***/
+
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {
+   transform: translate3d(-50%, -50%, 0);
+ }
+ 40% {
+  transform: translate3d(-50%,-35px, 0);
+ }
+ 60% {
+   transform: translate3d(-50%, -25px, 0);
+ }
+}
+
+.scroll-container {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: #ef463f;
+  bottom: 0;
+  left: 10%;
+}
+
+.scroll-down-arrow {
+  fill: #FFF;
+  width: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  animation: bounce 2s infinite;
+
+}
