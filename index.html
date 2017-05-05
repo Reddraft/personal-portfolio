@@ -6,6 +6,7 @@
   <title>Ricardo Garcia Web Designer - UI Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -155,10 +156,11 @@
             <h3>Crossfit <br>Concept Site</h3>
             <h4>Personal Project</h4>
             <!-- a element to make click possible on mobile devices -->
-            <a href="#">View more</a>
+            <a id="project-1" href="#modal-project-1">View Project</a>
           </figcaption>
         </figure>
       </li>
+
       <!-- project-2 -->
       <li>
         <figure class="project-photo">
@@ -167,10 +169,11 @@
             <h3>Registration <br>Landing Pages</h3>
             <h4>Tenant Evaluation</h4>
             <!-- a element to make click possible on mobile devices -->
-            <a href="#">View more</a>
+            <a id="project-2" href="#modal-project-2">View Project</a>
           </figcaption>
         </figure>
       </li>
+
       <!-- project-3 -->
       <li>
         <figure class="project-photo">
@@ -180,23 +183,56 @@
             <h3>Corporate <br>Site</h3>
             <h4>Ander Pr</h4>
             <!-- a element to make click possible on mobile devices -->
-            <a href="#">View more</a>
+            <a id="project-3" href="#modal-project-3">View Project</a>
           </figcaption>
         </figure>
       </li>
     </ul>
+
+    <!--MODAL PROJECT 1-->
+    <div id="modal-project-1">
+      <div id="modal-button-container" class="close-modal-project-1 " >
+          <img class="closebtn" src="img/closebtn.svg" alt="">
+      </div>
+      <div class="modal-content">
+        <img src="img/crossfit-project-full.jpg" alt="">
+      </div>
+    </div>
+    <!--MODAL PROJECT 2-->
+    <div id="modal-project-2">
+      <div id="modal-button-container" class="close-modal-project-2 " >
+          <img class="closebtn" src="img/closebtn.svg" alt="">
+      </div>
+      <div class="modal-content">
+        <img src="img/TenantEvaluation-project-full.jpg" alt="">
+      </div>
+    </div>
+    <!--MODAL PROJECT 3-->
+    <div id="modal-project-3">
+      <div id="modal-button-container" class="close-modal-project-3 " >
+          <img class="closebtn" src="img/closebtn.svg" alt="">
+      </div>
+      <div class="modal-content">
+        <img src="img/anderPr-project-full.jpg" alt="">
+      </div>
+    </div>
+
+
   </section>
+
+
 
 
 
 <!-- SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+<script src="js/animatedModal.min.js"></script>
 <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 
 <script src="js/tiltfx.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
