@@ -20,6 +20,7 @@ html {
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .clearfix::after {
@@ -450,7 +451,7 @@ nav {
 .social-wrapper {
   position: absolute;
   bottom: 0;
-  width: 50%;
+  z-index: 10;
 }
 
 .profile-social  {
@@ -595,9 +596,6 @@ figure.project-photo {
           transition: background-color .5s;
 }
 
-/*figure.project-photo:hover {
-
-}*/
 
 figure.project-photo img {
   position: absolute;
@@ -607,7 +605,7 @@ figure.project-photo img {
   height: auto;
   opacity: 1;
   transform: scale(1.1);
-  transition: all 10s;
+  transition: all .5s;
 }
 
 figure.project-photo:hover img {
@@ -622,6 +620,7 @@ figure.project-photo figcaption {
   height: 100%;
   padding: 1em;
   color: #fff;
+
 }
 
 figure.project-photo h3,
@@ -630,15 +629,29 @@ figure.project-photo h4 {
   left: 60px;
 }
 
+
 figure.project-photo h3 {
-  bottom: 100px;
+  bottom: 60px;
   letter-spacing: 3px;
   line-height: 100%;
+  transition: all .5s;
+}
+
+figure.project-photo:hover h3 {
+  bottom: 100px;
+
 }
 
 figure.project-photo h4 {
-  bottom: 60px;
+  bottom: -10px;
+  opacity: 0;
   text-transform: uppercase;
+  transition: all .5s;
+}
+
+figure.project-photo:hover h4 {
+  bottom: 60px;
+  opacity: 1;
 }
 
 /*anchor to make hover clickable on mobile. goes with mobile clickable script*/
