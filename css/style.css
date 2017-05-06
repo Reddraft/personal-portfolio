@@ -75,6 +75,11 @@ h3 {
 }
 
 h4 {
+  font-size: 1.1em;
+  font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+h5 {
   font-size: .9em;
   font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
 }
@@ -91,6 +96,7 @@ p {
 ************************/
 
 header {
+  position: relative;
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -451,7 +457,7 @@ nav {
 .social-wrapper {
   position: absolute;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .profile-social  {
@@ -624,7 +630,7 @@ figure.project-photo figcaption {
 }
 
 figure.project-photo h3,
-figure.project-photo h4 {
+figure.project-photo h5 {
   position: absolute;
   left: 60px;
 }
@@ -642,14 +648,14 @@ figure.project-photo:hover h3 {
 
 }
 
-figure.project-photo h4 {
+figure.project-photo h5 {
   bottom: -10px;
   opacity: 0;
   text-transform: uppercase;
   transition: all .5s;
 }
 
-figure.project-photo:hover h4 {
+figure.project-photo:hover h5 {
   bottom: 60px;
   opacity: 1;
 }
@@ -696,5 +702,102 @@ figure.project-photo figcaption a {
 }
 
 
+/*************************
+**  EXPERIENCE SECTION  **
+*************************/
 
-/********* Making The X **********/
+.section-experience {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/background-experience.jpg');
+}
+
+.experience-wrapper {
+  text-align: center;
+  padding: 0 3em;
+}
+
+.experience-wrapper svg {
+  width: 97px;
+  height: 97px;
+  margin-bottom: 16px;
+}
+
+.experience-sub-heading {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.experience--intro {
+  margin-bottom: 30px;
+}
+
+.experience-skills {
+  list-style: none;
+  font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: .9em;
+}
+
+.experience-skills li {
+  height: 35px;
+}
+
+.web-design-icon path {
+  fill: #ef463f;
+  stroke: #24202b;
+}
+
+.experience-wrapper:first-child:hover .web-design-icon path {
+  fill: #ef463f;
+  stroke: #24202b;
+  stroke-dasharray: 3242px;
+  stroke-dashoffset: 3242px;
+  animation: 1s web-design-icon-animation ease-in forwards;
+}
+
+@keyframes web-design-icon-animation {
+  from {
+   stroke-dashoffset: 3242px;
+   fill-opacity: 0;
+ }
+ to {
+   stroke-dashoffset: 0;
+   fill-opacity: 1;
+ }
+}
+
+
+.experience-wrapper:first-child .experience-sub-heading,
+.experience-wrapper:last-child .experience-skills {
+  color: #ef463f;
+}
+
+.experience-wrapper:last-child .experience-sub-heading,
+.experience-wrapper:first-child .experience-skills {
+  color: #24202b;
+}
+
+.development-icon path {
+  fill: #24202b;
+  stroke: #ef463f;
+}
+
+.experience-wrapper:last-child:hover .development-icon path {
+  fill: #24202b;
+  stroke: #ef463f;
+  stroke-dasharray: 3242px;
+  stroke-dashoffset: 3242px;
+  animation: 1s development-icon-animation ease-in forwards;
+}
+
+@keyframes development-icon-animation {
+  from {
+   stroke-dashoffset: 3242px;
+   fill-opacity: 0;
+ }
+ to {
+   stroke-dashoffset: 0;
+   fill-opacity: 1;
+ }
+}
