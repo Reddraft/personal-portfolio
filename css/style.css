@@ -109,7 +109,7 @@ header {
   top: 0;
   left: 0;
   background-image: url('../img/Hero-bg.jpg');
-  padding-top: 20px;
+
 }
 
 nav {
@@ -120,17 +120,19 @@ nav {
 .logo {
   position: absolute;
   left: 10%;
+  top: 20px;
   height: 90px;
   width: 90px;
   fill: #ef463f;
   cursor: pointer;
-  z-index: 20;
+  z-index: 30;
   transition: all .5s ease;
 
 }
 
 .logo-menu-open {
   fill: #FFF;
+  position: fixed;
 }
 .logo-menu-open:hover {
   fill: #8f2823;
@@ -138,19 +140,54 @@ nav {
 
 .logo:hover {
   -webkit-transform: rotate(360deg);
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 100;
+}
+
+.sticky .logo {
+  top: 12px;
+  height: 50px;
+  width: 50px;
+  left: 4%;
+}
+
+.sticky .menu-button-container span {
+  background-color: #ef463f;
+}
+
+.sticky .logo-menu-open {
+  height: 90px;
+  width: 90px;
+  top: 20px;
+  left: 10%;
+}
+
+.sticky .menu-button-container {
+  top: 20px;
+  right: 4%;
+}
+
+.sticky .menu-button-container.active {
+  top: 48px;
+  right: 10%;
 }
 
 /********* Button Nav When Active Class is not applied **********/
 
 .menu-button-container {
   position: absolute;
-  top: 28px;
+  top: 48px;
   right: 10%;
   width: 34px;
   height: 34px;
   float: right;
-  z-index: 20;
+  z-index: 30;
   cursor: pointer;
   transition: all .5s ease;
 }
@@ -185,6 +222,10 @@ nav {
 
 /********* Button Nav with Active Class is Applied **********/
 
+.menu-button-container.active {
+  position: fixed;
+}
+
 .menu-button-container.active:hover {
   transform: rotate(360deg);
 }
@@ -218,12 +259,14 @@ nav {
   left: 0;
   width: 100vw;
   background-color: #ef463f;
-  z-index: 10;
+  z-index: 20;
   height: 0%; /* initial state*/
   opacity: 0; /* initial state*/
   visibility: hidden; /* initial state*/
   transition: opacity .35s, visibility .35s, height .35s;
 }
+
+
 
 .main-nav {
   position: relative;
