@@ -67,12 +67,12 @@ $(document).ready(function() {
         easing: 'linear'
       })
   });
-  
+
   //-- go to footer when click on let's talk nav link
   $('a[href="#contact"]').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('body').height()
+        scrollTop: $('html, body').height()
       },
       {
         duration: 1000,
@@ -87,7 +87,7 @@ $(document).ready(function() {
   /* https://css-tricks.com/snippets/jquery/smooth-scrolling */
 
     $(function() {
-      $('a[href*="#"]:not([href="#"], [href="#contact"], [href="#modal-project-1"], [href="#modal-project-2"], [href="#modal-project-3"])').click(function() {
+      $('a[href*="#"]:not([href="#"], [href="#contact"], [href*="#modal-project"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

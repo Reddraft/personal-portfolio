@@ -11,7 +11,11 @@
 
  body {
   height: 100%;
-    margin-bottom: 390px;
+  margin-bottom: 335px;
+}
+
+a:hover {
+  cursor: crosshair !important;
 }
 
 html {
@@ -127,6 +131,7 @@ nav {
   cursor: pointer;
   z-index: 30;
   transition: all .5s ease;
+  cursor: crosshair;
 
 }
 
@@ -188,7 +193,7 @@ nav {
   height: 34px;
   float: right;
   z-index: 30;
-  cursor: pointer;
+  cursor: crosshair;
   transition: all .5s ease;
 }
 
@@ -450,12 +455,13 @@ nav {
   background-color: #ef463f;
   bottom: 0;
   left: 10%;
+  cursor: crosshair;
 }
 
 .scroll-down-arrow {
   fill: #FFF;
   width: 25px;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   animation: bounce 2s infinite;
@@ -731,7 +737,8 @@ figure.project-photo figcaption a {
 }
 
 
-#modal-button-container {
+#modal-button-container,
+.modal-button-container-link {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -742,19 +749,82 @@ figure.project-photo figcaption a {
   cursor: pointer;
 }
 
-#modal-button-container .closebtn {
+#modal-button-container .closebtn,
+.modal-button-container-link .linkbtn{
   position: absolute;
-  top: 40px;
   right: 40px;
   transition: all .25s;
+  width: 60px;
+  height: 60px;
+  stroke: #FFF;
+  fill: none;
 }
-#modal-button-container .closebtn:hover  {
+#modal-button-container .closebtn {
+  top: 40px;
+}
+
+.modal-button-container-link .linkbtn {
+  top: 110px;
+}
+
+#modal-button-container .closebtn:hover,
+.modal-button-container-link .linkbtn:hover  {
   transform: rotate(360deg);
+  fill: #24202b;
+  stroke: #FFF;
 }
 
 .modal-content img {
   width: 100%;
   display: block;
+}
+
+.modal-content.first-project {
+  background-color: #e86c36;
+}
+.modal-content.second-project {
+  background-color: #ef463f;
+}
+.modal-content.third-project {
+  background-color: #4e4376;
+}
+
+.modal-content .box-left {
+  padding-left: 4em;
+}
+.modal-content .box-right {
+  padding-right: 4em;
+}
+
+.modal-description-heading,
+.modal-description-parragraph,
+.modal-technologies-heading,
+.modal-technologies-list {
+  color: #fff;
+}
+
+.modal-description-parragraph {
+  text-align: justify;
+}
+
+.modal-description-heading,
+.modal-technologies-heading {
+  margin-bottom: 40px;
+}
+
+.modal-technologies-list {
+  list-style:none;
+}
+
+.modal-technologies-list {
+  list-style: none;
+  font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: .9em;
+}
+
+
+.modal-technologies-list li {
+  height: 35px;
 }
 
 
@@ -768,6 +838,7 @@ figure.project-photo figcaption a {
   box-shadow: 0 10px 50px #000;
   background-image: url('../img/background-experience.jpg');
   animation: animatedBackground 40s linear infinite;
+  margin-bottom: 55px;
 }
 
 @keyframes animatedBackground {
