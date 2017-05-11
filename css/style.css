@@ -490,12 +490,14 @@ nav {
   margin: 0;
   padding: 0;
   height: 100vh;
+  float: right;
 }
 
 /********* LEFT SIDE **********/
 .left-side {
   padding: 80px 0 0 10%;
   width: 55%;
+  float: left;
 }
 
 .profile-heading {
@@ -705,9 +707,12 @@ figure.project-photo h3 {
   transition: all .5s;
 }
 
+figure.project-photo h3 span {
+  display: block;
+}
+
 figure.project-photo:hover h3 {
   bottom: 100px;
-
 }
 
 figure.project-photo h5 {
