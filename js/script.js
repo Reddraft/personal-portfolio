@@ -9,7 +9,6 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     $('.logo').toggleClass('logo-menu-open');
     $('.menu-overlay').toggleClass('open');
-    $('html, body').toggleClass('stop-scrolling');
   });
 
   $('.main-nav li a').click(function() {
@@ -119,8 +118,9 @@ $(document).ready(function() {
         $('html, body').addClass('stop-scrolling');
       },
       afterClose: function() {
+        // $('#modal-project-1').scrollTop(0);
         $('html, body').removeClass('stop-scrolling');
-        $('#modal-project-1').scrollTop(0);
+
       }
 
   });
@@ -137,7 +137,7 @@ $(document).ready(function() {
       },
       afterClose: function() {
         $('html, body').removeClass('stop-scrolling');
-        $('#modal-project-2').scrollTop(0);
+        // $('#modal-project-2').scrollTop(0);
       }
 
   });
@@ -154,7 +154,7 @@ $(document).ready(function() {
       },
       afterClose: function() {
         $('html, body').removeClass('stop-scrolling');
-        $('#modal-project-3').scrollTop(0);
+        // $('#modal-project-3').scrollTop(0);
       }
   });
 
