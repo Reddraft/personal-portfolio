@@ -168,7 +168,7 @@
   /* general style s*/
   html { font-size: 16px; }
 
-  body { margin-bottom: 100vh; }
+  body { margin-bottom: 0; }
 
   /* header section */
   header {
@@ -227,7 +227,7 @@
 
   .section-profile p:not(.profile-sub-heading) { text-align: center; }
 
-  .social-wrapper { bottom: 20px; }
+  .social-wrapper { bottom: 60px; }
 
   .profile-social, .hire-social { width: 100%; }
 
@@ -270,13 +270,29 @@
   .section-experience {
     height: 200%;
     padding-top: 120px;
+    margin-bottom: 0;
   }
 
   .experience-wrapper:first-child { margin-bottom: 50px; }
 
 
   /* footer section */
-  footer { padding: 90px 0 70px 0; }
+  footer {
+    position: static;
+    padding: 90px 0 80px 0;
+  }
+
+  footer .left-box {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    top: 50px;
+  }
+
+  footer .right-box {
+    position: relative;
+    top: 40px;
+  }
 
   footer h6 { font-size: 4em; }
 
