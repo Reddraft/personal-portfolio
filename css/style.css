@@ -35,8 +35,7 @@ html {
 }
 
 .stop-scrolling {
-  overflow: hidden;
-  position: fixed;
+  overflow: hidden !important;
 }
 
 /************************
