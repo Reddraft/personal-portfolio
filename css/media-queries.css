@@ -230,6 +230,8 @@
   .social-wrapper {
     position: static;
     transform: none;
+    width: 100%;
+    margin-bottom: 20px;
    }
 
   .profile-social, .hire-social { width: 100%; }
