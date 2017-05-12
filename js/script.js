@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   if(jQuery.browser.mobile) {
 
-    $('a[href="#experience"]').click(function() {
+    $('a[href="#works"]').click(function() {
       $('html, body').animate(
         {
           scrollTop: $('.js-section-works').height() - 60
@@ -66,7 +66,7 @@ $(document).ready(function() {
   }
   else
   {
-    $('a[href="#experience"]').click(function() {
+    $('a[href="#works"]').click(function() {
       $('html, body').animate(
         {
           scrollTop: $('.js-section-works').height()
