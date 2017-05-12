@@ -118,9 +118,8 @@ $(document).ready(function() {
         $('html, body').addClass('stop-scrolling');
       },
       afterClose: function() {
-        // $('#modal-project-1').scrollTop(0);
         $('html, body').removeClass('stop-scrolling');
-
+        $('#modal-project-1').scrollTo('.js-section-works');
       }
 
   });
@@ -137,7 +136,7 @@ $(document).ready(function() {
       },
       afterClose: function() {
         $('html, body').removeClass('stop-scrolling');
-        // $('#modal-project-2').scrollTop(0);
+        $('#modal-project-1').scrollTo('.js-section-works');
       }
 
   });
@@ -154,7 +153,7 @@ $(document).ready(function() {
       },
       afterClose: function() {
         $('html, body').removeClass('stop-scrolling');
-        // $('#modal-project-3').scrollTop(0);
+        $('#modal-project-1').scrollTo('.js-section-works');
       }
   });
 
