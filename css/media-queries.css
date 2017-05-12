@@ -171,7 +171,10 @@
   body { margin-bottom: 100vh; }
 
   /* header section */
-  header { background-attachment: scroll; }
+  header {
+    height: 88vh;
+    background-attachment: scroll;
+  }
 
   nav { height: 0; }
 
@@ -179,6 +182,11 @@
     height: 70px;
     width: 70px;
     left: 5%;
+  }
+
+  .sticky {
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   .sticky .menu-button-container.active {
@@ -210,13 +218,16 @@
   .main-nav ul li a { font-size: 2em; }
 
   /* profile section */
-  .section-profile { height: 231vh; }
+  .section-profile { height: 240vh; }
 
-  .section-profile .left-side { text-align: center; }
+  .section-profile .left-side {
+    text-align: center;
+    height: initial;
+  }
 
   .section-profile p:not(.profile-sub-heading) { text-align: center; }
 
-  .social-wrapper { bottom: 60px; }
+  .social-wrapper { bottom: 20px; }
 
   .profile-social, .hire-social { width: 100%; }
 
