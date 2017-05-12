@@ -51,32 +51,7 @@ $(document).ready(function() {
     offset: '0;'
   });
 
-  if(jQuery.browser.mobile) {
 
-    $('a[href="#works"]').click(function() {
-      $('html, body').animate(
-        {
-          scrollTop: $('.js-section-works').height() - 200
-        },
-        {
-          duration: 1000,
-          easing: 'linear'
-        })
-    });
-  }
-  else
-  {
-    $('a[href="#works"]').click(function() {
-      $('html, body').animate(
-        {
-          scrollTop: $('.js-section-works').height()
-        },
-        {
-          duration: 1000,
-          easing: 'linear'
-        })
-    });
-  }
   /***************************************
   *** SCROLL ON HEADER SCROLLING BUTTON **
   ***************************************/

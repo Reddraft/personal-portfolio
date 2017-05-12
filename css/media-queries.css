@@ -184,10 +184,10 @@
     left: 5%;
   }
 
-  .sticky {
+  /*.sticky {
     height: 70px;
     background-color: rgba(255, 255, 255, 0.9);
-  }
+  }*/
 
   .sticky .menu-button-container.active {
     top: 35px;
