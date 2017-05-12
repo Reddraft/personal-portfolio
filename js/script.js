@@ -51,7 +51,32 @@ $(document).ready(function() {
     offset: '0;'
   });
 
+  if(jQuery.browser.mobile) {
 
+    $('a[href="#experience"]').click(function() {
+      $('html, body').animate(
+        {
+          scrollTop: $('.js-section-works').height() - 60
+        },
+        {
+          duration: 1000,
+          easing: 'linear'
+        })
+    });
+  }
+  else
+  {
+    $('a[href="#experience"]').click(function() {
+      $('html, body').animate(
+        {
+          scrollTop: $('.js-section-works').height()
+        },
+        {
+          duration: 1000,
+          easing: 'linear'
+        })
+    });
+  }
   /***************************************
   *** SCROLL ON HEADER SCROLLING BUTTON **
   ***************************************/
@@ -158,5 +183,7 @@ $(document).ready(function() {
         $('body').scrollTop($('.js-section-works').offset().top);
       }
   });
+
+
 
 });
