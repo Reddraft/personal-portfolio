@@ -1,0 +1,23 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reddraft/personal-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reddraft/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/Reddraft/personal-portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
