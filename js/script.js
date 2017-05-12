@@ -117,20 +117,11 @@ $(document).ready(function() {
       afterOpen: function() {
         $('html, body').addClass('stop-scrolling');
       },
-      afterClose: function() {
+      beforeClose: function() {
         $('#modal-project-1').scrollTop(0);
         $('html, body').removeClass('stop-scrolling');
-        $('html, body').animate(
-          {
-            scrollTop: $('.js-section-works').offset().top
-          },
-          {
-            duration: 1000,
-            easing: 'linear'
-          });
-
+        $('body').scrollTop($('.js-section-works').offset().top);
       }
-
   });
 
   // PROJECT 2
@@ -143,18 +134,10 @@ $(document).ready(function() {
       afterOpen: function() {
         $('html, body').addClass('stop-scrolling');
       },
-      afterClose: function() {
-        $('html, body').removeClass('stop-scrolling');
+      beforeClose: function() {
         $('#modal-project-2').scrollTop(0);
-
-        $('html, body').animate(
-          {
-            scrollTop: $('.js-section-works').offset().top
-          },
-          {
-            duration: 1000,
-            easing: 'linear'
-          });
+        $('html, body').removeClass('stop-scrolling');
+        $('body').scrollTop($('.js-section-works').offset().top);
       }
 
   });
@@ -169,17 +152,10 @@ $(document).ready(function() {
       afterOpen: function() {
         $('html, body').addClass('stop-scrolling');
       },
-      afterClose: function() {
-        $('html, body').removeClass('stop-scrolling');
+      beforeClose: function() {
         $('#modal-project-3').scrollTop(0);
-        $('html, body').animate(
-          {
-            scrollTop: $('.js-section-works').offset().top
-          },
-          {
-            duration: 1000,
-            easing: 'linear'
-          });
+        $('html, body').removeClass('stop-scrolling');
+        $('body').scrollTop($('.js-section-works').offset().top);
       }
   });
 
