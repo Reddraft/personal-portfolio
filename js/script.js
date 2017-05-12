@@ -10,6 +10,7 @@ $(document).ready(function() {
     $('.logo').toggleClass('logo-menu-open');
     $('.menu-overlay').toggleClass('open');
     $('html, body').toggleClass('stop-scrolling');
+    $('html, body').css('position','fixed');
   });
 
   $('.main-nav li a').click(function() {
