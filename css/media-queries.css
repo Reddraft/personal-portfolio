@@ -99,10 +99,10 @@
   .tilt {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
   }
 
   .tilt__back, .tilt__front {
+    border-radius: 50%;
     background-size: 60%;
     background-position: 50% 100%;
   }
@@ -171,6 +171,7 @@
   body { margin-bottom: 100vh; }
 
   /* header section */
+  header { background-attachment: scroll; }
 
   nav { height: 0; }
 
@@ -193,8 +194,8 @@
   }
 
   .hero-main-heading {
-      letter-spacing: 2px;
-      font-size: 1.8em;
+      letter-spacing: 1px;
+      font-size: 1.7em;
   }
 
   .hero-sub-heading { letter-spacing: 3px; }

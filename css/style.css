@@ -34,10 +34,7 @@ html {
     display: block;
 }
 
-.stop-scrolling {
-  overflow: hidden;
-  position: fixed;
-}
+
 
 /************************
 ** REUSABLE COMPONENTS **
@@ -227,7 +224,7 @@ nav {
 /********* When Hover on button **********/
 
 .menu-button-container:hover span { background-color: #ef463f; }
-.menu-button-container:hover .menu-button-top { top: 10px; left:  }
+.menu-button-container:hover .menu-button-top { top: 10px;}
 .menu-button-container:hover .menu-button-bottom { bottom: 10px; }
 
 /********* Button Nav with Active Class is Applied **********/
