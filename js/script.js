@@ -56,7 +56,7 @@ $(document).ready(function() {
     $('a[href="#works"]').click(function() {
       $('html, body').animate(
         {
-          scrollTop: $('.js-section-works').height() - 60
+          scrollTop: $('.js-section-works').height() - 200
         },
         {
           duration: 1000,
