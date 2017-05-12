@@ -227,7 +227,10 @@
 
   .section-profile p:not(.profile-sub-heading) { text-align: center; }
 
-  .social-wrapper { bottom: 60px; }
+  .social-wrapper {
+    position: static;
+    transform: none;
+   }
 
   .profile-social, .hire-social { width: 100%; }
 
