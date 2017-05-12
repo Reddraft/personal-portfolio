@@ -246,17 +246,20 @@
 
   /* works section */
 
-  figure.project-photo img, figure.project-photo:hover img { transform: scale(1.2); }
+  figure.project-photo img, figure.project-photo:hover img { transform: scale(1.4); }
 
   figure.project-photo h3 {
     font-size: 1.7em;
     line-height: 120%;
-    bottom: 70px;
+    bottom: 60px;
   }
+
+  figure.project-photo:hover h3 { bottom: 60px; }
 
   figure.project-photo h3 span {  display: block; }
 
-  figure.project-photo h5 { bottom: 35px; }
+  figure.project-photo h5 { bottom: 30px; }
+  figure.project-photo:hover h5 { bottom: 30px; }
 
   .modal-description-heading {
     font-size: 1.6em;
