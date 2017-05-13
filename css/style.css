@@ -65,12 +65,12 @@ section, footer {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 4em;
   font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 4em;
   font-family:'roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -95,7 +95,7 @@ h6 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.1em;
   font-family:'roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 150%;
   font-weight: 400;
@@ -125,8 +125,8 @@ nav {
   position: absolute;
   left: 10%;
   top: 1em;
-  height: 4.5em;
-  width: 4.5em;
+  height: 5em;
+  width: 5em;
   fill: #ef463f;
   cursor: pointer;
   z-index: 30;
@@ -156,9 +156,9 @@ nav {
 }
 
 .sticky .logo {
-  top: .6em;
-  height: 2.5em;
-  width: 2.5em;
+  top: 1em;
+  height: 3.5em;
+  width: 3.5em;
   left: 4%;
 }
 
@@ -167,14 +167,14 @@ nav {
 }
 
 .sticky .logo-menu-open {
-  height: 4.5em;
-  width: 4.5em;
+  height: 5em;
+  width: 5em;
   top: 1em;
   left: 10%;
 }
 
 .sticky .menu-button-container {
-  top: 1em;
+  top: 1.5em;
   right: 4%;
 }
 
@@ -315,7 +315,7 @@ nav {
 
 .social-nav {
   position: absolute;
-  bottom: 4em;
+  bottom: 5em;
   text-align: center;
   width: 100%;
 }
@@ -344,7 +344,7 @@ nav {
 }
 
 .social-nav li svg {
-  width: 2em;
+  width: 3em;
   height: auto;
   fill: #8f2823;
   transition: all .25s ease;
@@ -495,7 +495,7 @@ nav {
 
 /********* LEFT SIDE **********/
 .left-side {
-  padding: 4em 0 0 10%;
+  padding: 7em 0 0 10%;
   width: 55%;
   float: left;
 }
@@ -506,7 +506,7 @@ nav {
 }
 
 .profile-sub-heading {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 120%;
   font-weight: 700;
   color: #24202b;
@@ -514,7 +514,7 @@ nav {
 }
 
 .section-profile p:not(.profile-sub-heading) {
-  margin-bottom: 1.25em;
+  margin-bottom: 1.5em;
 }
 
 .profile-heading span { color: #ef463f; }
@@ -529,7 +529,7 @@ nav {
   list-style: none;
   float:left;
   background-color: #ef463f;
-  height: 4.5em;
+  height: 5em;
   padding: 0 3em;
 }
 
@@ -543,8 +543,8 @@ nav {
 
 .profile-social li a {
   display: block;
-  width: 1.45em;
-  height: 1.45em;
+  width: 1.7em;
+  height: 1.7em;
 }
 
 .profile-social  li:last-child {
@@ -552,7 +552,7 @@ nav {
 }
 
 .profile-social li svg {
-  width: 29px;
+  width: 1.7em;
   height: auto;
   fill: #FFF;
   transition: all .25s ease;
@@ -569,7 +569,7 @@ nav {
   list-style: none;
   float:left;
   background-color: #24202b;
-  height: 4.5em;
+  height: 5em;
   padding: 0 4.5em;
 }
 
@@ -579,7 +579,7 @@ nav {
   font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 4.5em;
+  line-height: 5.25em;
   transform: scale3d(1,1,1);
   display: inline-block;
   transition: all .3s;
@@ -844,6 +844,7 @@ figure.project-photo figcaption a {
   background-image: url('../img/background-experience.jpg');
   animation: animatedBackground 40s linear infinite;
   margin-bottom: 55px;
+  padding: 7em 0;
 }
 
 @keyframes animatedBackground {
@@ -857,14 +858,14 @@ figure.project-photo figcaption a {
 }
 
 .experience-wrapper svg {
-  width: 4.85em;
-  height: 4.85em;
-  margin-bottom: 0.8em;
+  width: 6em;
+  height: 6em;
+  margin-bottom: 2em;
 }
 
 .experience-sub-heading {
   text-transform: uppercase;
-  margin-bottom: 1.5emem;
+  margin-bottom: 1.5em;
   letter-spacing: 2px;
 }
 
@@ -875,11 +876,11 @@ figure.project-photo figcaption a {
 .experience-skills {
   list-style: none;
   font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 .experience-skills li {
-  height: 2em;
+  height: 2.2em;
 }
 
 .web-design-icon path {
