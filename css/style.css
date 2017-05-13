@@ -495,14 +495,14 @@ nav {
 
 /********* LEFT SIDE **********/
 .left-side {
-  padding: 7em 0 0 10%;
+  padding: 5em 0 0 10%;
   width: 55%;
   float: left;
 }
 
 .profile-heading {
   color: #24202b;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 
 .profile-sub-heading {
@@ -510,11 +510,11 @@ nav {
   line-height: 120%;
   font-weight: 700;
   color: #24202b;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
 }
 
 .section-profile p:not(.profile-sub-heading) {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 }
 
 .profile-heading span { color: #ef463f; }
