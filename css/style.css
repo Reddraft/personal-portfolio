@@ -844,7 +844,7 @@ figure.project-photo figcaption a {
   background-image: url('../img/background-experience.jpg');
   animation: animatedBackground 40s linear infinite;
   margin-bottom: 55px;
-  padding: 7em 0;
+  padding: 5em 0;
 }
 
 @keyframes animatedBackground {
