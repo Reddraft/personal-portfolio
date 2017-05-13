@@ -9,15 +9,6 @@
   box-sizing: border-box;
 }
 
- body {
-  height: 100%;
-  margin-bottom: 335px;
-}
-
-a:hover {
-  cursor: crosshair !important;
-}
-
 html {
   color: #555;
   font-family: 'roboto', 'Arial', sans-serif;
@@ -28,11 +19,18 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  height: 100%;
+  margin-bottom: 335px;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: block;
 }
+
+a:hover { cursor: crosshair !important; }
 
 
 
@@ -44,12 +42,12 @@ html {
 
 .row {
   width: 90%;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 section, footer {
-  padding: 80px 0;
+  padding: 4em 0;
 }
 
 /****** TYPOGRAPHY STYLES ******/
@@ -120,15 +118,15 @@ header {
 
 nav {
   position: relative;
-  height: 90px;
+  height: 4.5em;
 }
 
 .logo {
   position: absolute;
   left: 10%;
-  top: 20px;
-  height: 90px;
-  width: 90px;
+  top: 1em;
+  height: 4.5em;
+  width: 4.5em;
   fill: #ef463f;
   cursor: pointer;
   z-index: 30;
@@ -158,9 +156,9 @@ nav {
 }
 
 .sticky .logo {
-  top: 12px;
-  height: 50px;
-  width: 50px;
+  top: .6em;
+  height: 2.5em;
+  width: 2.5em;
   left: 4%;
 }
 
@@ -169,19 +167,19 @@ nav {
 }
 
 .sticky .logo-menu-open {
-  height: 90px;
-  width: 90px;
-  top: 20px;
+  height: 4.5em;
+  width: 4.5em;
+  top: 1em;
   left: 10%;
 }
 
 .sticky .menu-button-container {
-  top: 20px;
+  top: 1em;
   right: 4%;
 }
 
 .sticky .menu-button-container.active {
-  top: 48px;
+  top: 2.4em;
   right: 10%;
 }
 
@@ -189,10 +187,10 @@ nav {
 
 .menu-button-container {
   position: absolute;
-  top: 48px;
+  top: 2.4em;
   right: 10%;
-  width: 34px;
-  height: 34px;
+  width: 1.7em;
+  height: 1.7em;
   float: right;
   z-index: 30;
   cursor: crosshair;
@@ -202,7 +200,7 @@ nav {
 .menu-button-container span {
   position: absolute;
   background-color: #FFF;
-  height: 3px;
+  height: .15em;
   width: 100%;
   z-index: 300;
   transition: all .25s;
@@ -317,7 +315,7 @@ nav {
 
 .social-nav {
   position: absolute;
-  bottom: 80px;
+  bottom: 4em;
   text-align: center;
   width: 100%;
 }
@@ -333,7 +331,7 @@ nav {
   display: inline-block;
   height: 100%;
   vertical-align: text-bottom;
-  margin-right: 20px;
+  margin-right: 1em;
 }
 
 .social-nav ul li:last-child {
@@ -346,7 +344,7 @@ nav {
 }
 
 .social-nav li svg {
-  width: 40px;
+  width: 2em;
   height: auto;
   fill: #8f2823;
   transition: all .25s ease;
@@ -452,8 +450,8 @@ nav {
 
 .scroll-container {
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 4.5em;
+  height: 4.5em;
   background-color: #ef463f;
   bottom: 0;
   left: 10%;
@@ -462,7 +460,7 @@ nav {
 
 .scroll-down-arrow {
   fill: #FFF;
-  width: 25px;
+  width: 1.75em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -497,14 +495,14 @@ nav {
 
 /********* LEFT SIDE **********/
 .left-side {
-  padding: 80px 0 0 10%;
+  padding: 4em 0 0 10%;
   width: 55%;
   float: left;
 }
 
 .profile-heading {
   color: #24202b;
-  margin-bottom: 50px;
+  margin-bottom: .5em;
 }
 
 .profile-sub-heading {
@@ -512,11 +510,11 @@ nav {
   line-height: 120%;
   font-weight: 700;
   color: #24202b;
-  margin-bottom: 30px;
+  margin-bottom: 1.25em;
 }
 
 .section-profile p:not(.profile-sub-heading) {
-  margin-bottom: 25px;
+  margin-bottom: 1.25em;
 }
 
 .profile-heading span { color: #ef463f; }
@@ -531,22 +529,22 @@ nav {
   list-style: none;
   float:left;
   background-color: #ef463f;
-  height: 90px;
-  padding: 0 60px;
+  height: 4.5em;
+  padding: 0 3em;
 }
 
 .profile-social  li {
   position: relative;
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 3em;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .profile-social li a {
   display: block;
-  width: 29px;
-  height: 29px;
+  width: 1.45em;
+  height: 1.45em;
 }
 
 .profile-social  li:last-child {
@@ -571,17 +569,17 @@ nav {
   list-style: none;
   float:left;
   background-color: #24202b;
-  height: 90px;
-  padding: 0 90px;
+  height: 4.5em;
+  padding: 0 4.5em;
 }
 
 .hire-social  a {
   color: #FFF;
   font-family:'nexa_boldregular', 'roboto', 'Helvetica', 'Arial', sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 90px;
+  line-height: 4.5em;
   transform: scale3d(1,1,1);
   display: inline-block;
   transition: all .3s;
@@ -653,7 +651,7 @@ figure {
 .works-wrapper li {
   display: block;
   float: left;
-  width: 33.333vw;
+  width: 33.333%;
   height: 100vh;
 }
 
@@ -671,7 +669,7 @@ figure.project-photo {
 
 figure.project-photo img {
   position: absolute;
-  top: 30px;
+  top: 1.7em;
   display: block;
   width: 100%;
   height: auto;
@@ -698,12 +696,12 @@ figure.project-photo figcaption {
 figure.project-photo h3,
 figure.project-photo h5 {
   position: absolute;
-  left: 60px;
+  left: 10%;
 }
 
 
 figure.project-photo h3 {
-  bottom: 60px;
+  bottom: 1em;
   letter-spacing: 3px;
   line-height: 100%;
   transition: all .5s;
@@ -714,7 +712,7 @@ figure.project-photo h3 span {
 }
 
 figure.project-photo:hover h3 {
-  bottom: 100px;
+  bottom: 2em;
 }
 
 figure.project-photo h5 {
@@ -725,7 +723,7 @@ figure.project-photo h5 {
 }
 
 figure.project-photo:hover h5 {
-  bottom: 60px;
+  bottom: 1.5em;
   opacity: 1;
 }
 
@@ -759,19 +757,19 @@ figure.project-photo figcaption a {
 #modal-button-container .closebtn,
 .modal-button-container-link .linkbtn{
   position: absolute;
-  right: 40px;
+  right: 2em;
   transition: all .25s;
-  width: 60px;
-  height: 60px;
+  width: 3em;
+  height: 3em;
   stroke: #FFF;
   fill: none;
 }
 #modal-button-container .closebtn {
-  top: 40px;
+  top: 2em;
 }
 
 .modal-button-container-link .linkbtn {
-  top: 110px;
+  top: 5.5em;
 }
 
 #modal-button-container .closebtn:hover,
@@ -816,7 +814,7 @@ figure.project-photo figcaption a {
 
 .modal-description-heading,
 .modal-technologies-heading {
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 
 .modal-technologies-list {
@@ -831,7 +829,7 @@ figure.project-photo figcaption a {
 
 
 .modal-technologies-list li {
-  height: 35px;
+  height: 2.5em;
 }
 
 
@@ -859,19 +857,19 @@ figure.project-photo figcaption a {
 }
 
 .experience-wrapper svg {
-  width: 97px;
-  height: 97px;
-  margin-bottom: 16px;
+  width: 4.85em;
+  height: 4.85em;
+  margin-bottom: 0.8em;
 }
 
 .experience-sub-heading {
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 1.5emem;
   letter-spacing: 2px;
 }
 
 .experience--intro {
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .experience-skills {
@@ -881,7 +879,7 @@ figure.project-photo figcaption a {
 }
 
 .experience-skills li {
-  height: 35px;
+  height: 2em;
 }
 
 .web-design-icon path {
@@ -970,9 +968,12 @@ footer h3 span {
   color: #ef463f;
 }
 
-footer h3,
-footer .contact-info {
-  margin-bottom: 25px;
+footer h3 {
+  margin-bottom: .4em;
+}
+
+.contact-info {
+  margin-bottom: 2em;
 }
 
 footer p,
@@ -994,20 +995,20 @@ footer a:hover {
 
 .footer-social li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 1em;
 }
 .footer-social li:last-child {
   margin-right: 0;
 }
 .footer-social li a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 2em;
+  height: 2em;
   text-decoration: none;
 }
 
 .footer-social li svg {
-  width: 40px;
+  width: 2em;
   height: auto;
   fill: #ef463f;
   transition: all .25s ease;
