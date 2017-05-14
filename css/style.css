@@ -32,6 +32,11 @@ body {
 
 a:hover { cursor: crosshair !important; }
 
+.stop-scrolling {
+  position: fixed;
+  overflow: hidden;
+}
+
 
 
 /************************
