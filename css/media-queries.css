@@ -222,7 +222,10 @@
   .main-nav ul li a { font-size: 2em; }
 
   /* profile section */
-  .section-profile { height: 240vh; }
+  .section-profile {
+    height: initial;
+    padding-bottom: 4em;
+  }
 
   .section-profile .left-side {
     text-align: center;
