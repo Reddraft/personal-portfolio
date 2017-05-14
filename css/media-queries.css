@@ -229,6 +229,8 @@
     height: initial;
   }
 
+  .section-profile .profile-heading { font-size: 3.2em; }
+
   .section-profile p:not(.profile-sub-heading) { text-align: center; }
 
   .social-wrapper {
