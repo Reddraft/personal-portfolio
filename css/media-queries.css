@@ -196,6 +196,10 @@
 
   .menu-button-container { top: 35px; }
 
+  .menu-button-container:hover span { background-color: initial; }
+  .menu-button-container:hover .menu-button-top { top: 0;}
+  .menu-button-container:hover .menu-button-bottom { bottom:0; }
+
   .hero-text-box {
     left: 0;
     padding: 0 5%;
