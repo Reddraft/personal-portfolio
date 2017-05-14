@@ -5,7 +5,9 @@
 /****************************
         Max Width 1280px
 ****************************/
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1439px) {
+
+  html { font-size: 18px; }
 
   /* header section */
   .logo, .scroll-container, .hero-text-box  { left: 5%; }
@@ -18,8 +20,6 @@
   .profile-heading { margin-bottom: 20px; }
 
   .section-profile p:not(.profile-sub-heading) { margin-bottom: 15px; }
-
-
 }
 
 /****************************
@@ -29,7 +29,6 @@
 @media only screen and (max-width: 1024px) {
 
   /* general styles */
-  html { font-size: 18px; }
 
   body { margin-bottom: 310px; }
 
@@ -196,7 +195,7 @@
 
   .menu-button-container { top: 35px; }
 
-  .menu-button-container:hover span { background-color: initial; }
+  .menu-button-container:hover span { color: initial; }
   .menu-button-container:hover .menu-button-top { top: 0;}
   .menu-button-container:hover .menu-button-bottom { bottom:0; }
 
