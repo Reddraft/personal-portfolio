@@ -47,7 +47,7 @@ min width 1400px  Max Width 1680px
 ****************************/
 @media only screen and (max-width: 1439px) {
 
-  html { font-size: 115%; }
+  html { font-size: 110%; }
 
   body { margin-bottom: 15em; }
 
@@ -77,7 +77,7 @@ min width 1400px  Max Width 1680px
 
   body { margin-bottom: 310px; }
 
-  html { font-size: 100%; }
+  html { font-size: 110%; }
 
   /* profile section */
   .section-profile .left-side,
@@ -94,7 +94,7 @@ min width 1400px  Max Width 1680px
   .tilt__back, .tilt__front { background-size: 90%; }
 
   /* works section */
-  figure.project-photo img { transform: scale(1.4); }
+  figure.project-photo img { transform: scale(1.7); }
 
   figure.project-photo h3 {
     left: 40px;
