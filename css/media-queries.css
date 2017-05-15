@@ -18,6 +18,8 @@ and (max-device-width: 1600px) {
 
   html { font-size: 115%; }
 
+  body { margin-bottom: 15em; }
+
   /* header section */
   .logo, .scroll-container, .hero-text-box  { left: 5%; }
 
@@ -40,6 +42,8 @@ and (max-device-width: 1600px) {
   /* general styles */
 
   body { margin-bottom: 310px; }
+
+  html { font-size: 100%; }
 
   /* profile section */
   .section-profile .left-side,
@@ -192,10 +196,9 @@ and (max-device-width: 1600px) {
     left: 5%;
   }
 
-  /*.sticky {
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.9);
-  }*/
+  .main-nav {
+    top: 40%;
+  }
 
   .sticky .menu-button-container.active {
     top: 35px;
