@@ -204,9 +204,9 @@ min width 1400px  Max Width 1680px
     left: 5%;
   }
 
-  .main-nav { top: 40%; }
+  .main-nav { top: 50%; }
 
-  .social-nav { bottom: 25%; }
+  .social-nav { bottom: 20%; }
 
   .sticky .menu-button-container.active {
     top: 35px;
