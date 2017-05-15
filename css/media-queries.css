@@ -2,8 +2,10 @@
 **    MEDIA QUERIES    **
 ************************/
 
+
+
 /****************************
-        Max Width 1280px
+min width 1400px  Max Width 1680px
 ****************************/
 @media only screen
   and (min-width: 1440px)
@@ -14,7 +16,7 @@
 }
 
 /****************************
-        Max Width 1280px
+        Max Width 1439px
 ****************************/
 @media only screen and (max-width: 1439px) {
 
@@ -33,6 +35,9 @@
   .profile-heading { margin-bottom: .5em; }
 
   .section-profile p:not(.profile-sub-heading) { margin-bottom: .75em; }
+
+  /* works section */
+  figure.project-photo img { transform: scale(1.2); }
 }
 
 /****************************
@@ -192,15 +197,16 @@
 
   nav { height: 0; }
 
+
   .logo, .sticky .logo-menu-open {
     height: 70px;
     width: 70px;
     left: 5%;
   }
 
-  .main-nav {
-    top: 40%;
-  }
+  .main-nav { top: 40%; }
+
+  .social-nav { bottom: 25%; }
 
   .sticky .menu-button-container.active {
     top: 35px;
