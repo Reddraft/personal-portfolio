@@ -27,7 +27,8 @@ min width 1400px  Max Width 1680px
   and (min-width: 1440px)
   and (max-width: 1600px) {
 
-    html { font-size: 125%; }
+    html { font-size: 135%; }
+    figure.project-photo img { transform: scale(1.2); }
 
 }
 
