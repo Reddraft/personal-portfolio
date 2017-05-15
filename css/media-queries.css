@@ -6,8 +6,8 @@
         Max Width 1280px
 ****************************/
 @media only screen
-and (min-device-width: 1440px)
-and (max-device-width: 1600px) {
+and (min-width: 1440px)
+and (max-width: 1600px) {
   html { font-size: 130%; }
 }
 
