@@ -6,7 +6,7 @@
 /* Largest screens ----------- */
 @media only screen  and (min-width : 1921px) {
 
-  html { font-size: 230%; }
+  html { font-size: 200%; }
 
   body { margin-bottom: 15em; }
 
@@ -18,7 +18,7 @@
 /* Large screens ----------- */
 @media only screen  and (max-width : 1920px) {
 
-  html { font-size: 175%; }
+  html { font-size: 160%; }
 
   body { margin-bottom: 15em; }
 
