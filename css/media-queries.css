@@ -3,6 +3,22 @@
 ************************/
 
 
+/* Largest screens ----------- */
+@media only screen  and (min-width : 1921px) {
+ html { font-size: 230%; }
+ body { margin-bottom: 15em; }
+ .row { width: 80%; }
+}
+
+
+/* Large screens ----------- */
+@media only screen  and (max-width : 1920px) {
+ html { font-size: 175%; }
+ body { margin-bottom: 15em; }
+ .row { width: 80%; }
+}
+
+
 
 /****************************
 min width 1400px  Max Width 1680px

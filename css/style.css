@@ -22,6 +22,7 @@ html {
 body {
   height: 100%;
   margin-bottom: 335px;
+  background-color: #24202b;
 }
 
 .clearfix::after {
