@@ -5,9 +5,18 @@
 /****************************
         Max Width 1280px
 ****************************/
+@media only screen
+and (min-device-width: 1440px)
+and (max-device-width: 1600px) {
+  html { font-size: 130%; }
+}
+
+/****************************
+        Max Width 1280px
+****************************/
 @media only screen and (max-width: 1439px) {
 
-  html { font-size: 18px; }
+  html { font-size: 115%; }
 
   /* header section */
   .logo, .scroll-container, .hero-text-box  { left: 5%; }
@@ -15,11 +24,11 @@
   .menu-button-container { right: 5%; }
 
   /* profile section */
-  .left-side { padding: 80px 0 0 5%; }
+  .left-side { padding: 5em 0 0 5%; }
 
-  .profile-heading { margin-bottom: 20px; }
+  .profile-heading { margin-bottom: .5em; }
 
-  .section-profile p:not(.profile-sub-heading) { margin-bottom: 15px; }
+  .section-profile p:not(.profile-sub-heading) { margin-bottom: .75em; }
 }
 
 /****************************
