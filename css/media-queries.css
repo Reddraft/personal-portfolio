@@ -291,7 +291,10 @@ min width 1400px  Max Width 1680px
 
   .profile-social, .hire-social { width: 100%; }
 
-  .section-profile .right-side { height: 115vw; }
+  .section-profile .right-side {
+    position: relative;
+    height: 115vw;
+  }
 
   .tilt {
     width: 100%;
