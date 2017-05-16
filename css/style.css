@@ -483,8 +483,8 @@ nav {
 .section-profile {
   position: relative;
   padding: 0;
-  height: 100vh;
   background-color: #FFF;
+  overflow: hidden;
 }
 
 .section-profile .row {
@@ -495,7 +495,6 @@ nav {
 .left-side, .right-side {
   margin: 0;
   padding: 0;
-  height: 100vh;
   float: right;
 }
 
@@ -526,9 +525,12 @@ nav {
 .profile-heading span { color: #ef463f; }
 
 .social-wrapper {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
   z-index: 1;
+  width: 100%;
+  margin-top: 2.5em;
+  text-align: center;
 }
 
 .profile-social  {
@@ -536,13 +538,14 @@ nav {
   float:left;
   background-color: #ef463f;
   height: 5em;
-  padding: 0 3em;
+  padding: 0 2em;
+  width: 55%;
 }
 
 .profile-social  li {
   position: relative;
   display: inline-block;
-  margin-right: 3em;
+  margin-right: 2em;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -576,7 +579,9 @@ nav {
   float:left;
   background-color: #24202b;
   height: 5em;
-  padding: 0 4.5em;
+  padding: 0 4em;
+  width: 45%
+
 }
 
 .hire-social  a {
@@ -598,9 +603,12 @@ nav {
 /********* RIGHT SIDE **********/
 
 .right-side {
-  position: relative;
+  position: absolute;
   width: 45%;
   overflow: hidden;
+  height: 100%;
+  bottom: 0;
+  right: 0;
 }
 
 .tilt {
