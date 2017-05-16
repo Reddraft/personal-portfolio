@@ -853,7 +853,6 @@ figure.project-photo figcaption a {
 
 .section-experience {
   position: relative;
-  height:  100vh;
   box-shadow: 0 10px 50px #000;
   background-image: url('../img/background-experience.jpg');
   animation: animatedBackground 40s linear infinite;
