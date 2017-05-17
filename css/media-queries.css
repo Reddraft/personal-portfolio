@@ -8,7 +8,7 @@
 
   html { font-size: 200%; }
 
-  body { margin-bottom: 15em; }
+  body { padding-bottom: 19em; }
 
   .row { width: 80%; }
 
@@ -20,7 +20,7 @@
 
   html { font-size: 160%; }
 
-  body { margin-bottom: 15em; }
+  body { padding-bottom: 15em; }
 
   .row { width: 80%; }
 
@@ -49,7 +49,7 @@ min width 1400px  Max Width 1680px
 
   html { font-size: 110%; }
 
-  body { margin-bottom: 15em; }
+  body { padding-bottom: 19em; }
 
   /* header section */
   .logo, .scroll-container, .hero-text-box  { left: 5%; }
@@ -75,7 +75,7 @@ min width 1400px  Max Width 1680px
 
   /* general styles */
 
-  body { margin-bottom: 310px; }
+  body { padding-bottom: 19em; }
 
   html { font-size: 110%; }
 
