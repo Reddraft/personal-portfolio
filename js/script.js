@@ -1,5 +1,16 @@
 
+
+// $(window).on("load", function() {
+//   $('body').addClass('loaded');
+// });
+
+
 $(document).ready(function() {
+
+
+  setTimeout(function(){
+    $('body').addClass('loaded');
+  }, 7000);
 
   /*******************************
   **** FULL SCREEN NAVIGATION ****
