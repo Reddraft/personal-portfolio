@@ -8,7 +8,7 @@
 
   html { font-size: 200%; }
 
-  body { padding-bottom: 19em; }
+  body { margin-bottom: 18em; }
 
   .row { width: 80%; }
 
@@ -20,7 +20,7 @@
 
   html { font-size: 160%; }
 
-  body { padding-bottom: 15em; }
+  body { margin-bottom: 18em; }
 
   .row { width: 80%; }
 
@@ -49,7 +49,7 @@ min width 1400px  Max Width 1680px
 
   html { font-size: 110%; }
 
-  body { padding-bottom: 19em; }
+  body { margin-bottom: 18em; }
 
   /* header section */
   .logo, .scroll-container, .hero-text-box  { left: 5%; }
@@ -67,6 +67,8 @@ min width 1400px  Max Width 1680px
   figure.project-photo img { transform: scale(1.2); }
 }
 
+
+
 /****************************
   min-width 768 max-width 1024
 ****************************/
@@ -75,7 +77,7 @@ min width 1400px  Max Width 1680px
 
   /* general styles */
 
-  body { padding-bottom: 19em; }
+  body { margin-bottom: 18em; }
 
   html { font-size: 110%; }
 
@@ -214,7 +216,7 @@ min width 1400px  Max Width 1680px
   /* general style s*/
   html { font-size: 16px; }
 
-  body { padding-bottom: 0; }
+  body { margin-bottom: 0; }
 
   /* header section */
   header {
