@@ -58,7 +58,7 @@ a:hover { cursor: crosshair !important; }
   width: 4em;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   fill: #fff;
   animation: spin 1s infinite;
   opacity: 1;
