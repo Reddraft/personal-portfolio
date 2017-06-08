@@ -397,11 +397,14 @@ min width 1400px  Max Width 1680px
 
   .scroll-down-arrow { width: 1em; }
 
-  .main-nav { height: 50%; }
+  .main-nav {
+    height: 50%;
+    top: 48%;
+  }
 
-  main-nav ul li {  min-height: initial; }
+  .main-nav ul li {  min-height: initial; }
 
-  .main-nav ul li a { font-size: 1.7em; }
+  .main-nav ul li a { font-size: 1.6em; }
 
   .social-nav { bottom: 1.5em; }
 
