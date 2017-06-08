@@ -372,7 +372,6 @@ min width 1400px  Max Width 1680px
   and (orientation : landscape) {
 
   /* header section */
-
   header {
     height: 100vh;
     background-attachment: scroll;
@@ -381,6 +380,15 @@ min width 1400px  Max Width 1680px
   .logo {
     width: 3em;
     height: 3em;
+  }
+
+  .sticky .logo-menu-open,
+  .sticky .logo{
+    height: 3em;
+    width: 3em;
+  }
+  .sticky .logo-menu-open {
+    top: 2em;
   }
 
   .menu-button-container { top: 1.4em; }
@@ -407,5 +415,46 @@ min width 1400px  Max Width 1680px
   .main-nav ul li a { font-size: 1.6em; }
 
   .social-nav { bottom: 1.5em; }
+
+
+  /* profile section */
+  .section-profile {
+    height: initial;
+    padding-bottom: 4em;
+  }
+
+  .section-profile .left-side {
+    text-align: center;
+    height: initial;
+  }
+
+  .section-profile .profile-heading { font-size: 3.2em; }
+
+  .section-profile p:not(.profile-sub-heading) { text-align: center; }
+
+  .social-wrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+   }
+
+  .profile-social, .hire-social { width: 100%; }
+
+  .section-profile .right-side {
+    position: relative;
+    height: 58vw;
+  }
+
+  .tilt {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+  }
+
+  .tilt__back, .tilt__front {
+    background-size: 60%;
+    background-position: 50% 100%;
+  }
 
 }
