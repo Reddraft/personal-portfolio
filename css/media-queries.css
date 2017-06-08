@@ -365,3 +365,38 @@ min width 1400px  Max Width 1680px
   footer h6 { font-size: 4em; }
 
 }
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 767px)
+  and (orientation : landscape) {
+
+  /* header section */
+
+  header {
+    height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .logo {
+    width: 3em;
+    height: 3em;
+  }
+
+  .menu-button-container { top: 1.4em; }
+
+  .hero-main-heading {
+    font-size: 1.7em;
+    margin: 0.3em 0;
+  }
+
+  .scroll-container {
+    width: 3em;
+    height: 3em;
+  }
+
+  .scroll-down-arrow {
+    width: 1em;
+  }
+
+}
