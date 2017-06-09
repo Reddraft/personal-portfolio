@@ -54,11 +54,11 @@ a:hover { cursor: crosshair !important; }
 
 
  .preloader .logo {
-  height: 4em;
-  width: 4em;
+  height: 8em;
+  width: 8em;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   fill: #fff;
   animation: spin 1s infinite;
   opacity: 1;

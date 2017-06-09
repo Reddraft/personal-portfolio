@@ -387,11 +387,16 @@ min width 1400px  Max Width 1680px
     height: 3em;
     width: 3em;
   }
-  .sticky .logo-menu-open {
-    top: 2em;
-  }
+
+  .sticky .logo-menu-open { top: 2em; }
 
   .menu-button-container { top: 1.4em; }
+
+  .preloader .logo {
+   height: 6em;
+   width: 6em;
+   top: 40%; 
+ }
 
   .hero-main-heading {
     font-size: 1.7em;
@@ -456,5 +461,29 @@ min width 1400px  Max Width 1680px
     background-size: 60%;
     background-position: 50% 100%;
   }
+
+  /* works section */
+
+  figure.project-photo img, figure.project-photo:hover img { transform: scale(1.4); }
+
+  figure.project-photo h3 {
+    font-size: 1.7em;
+    line-height: 120%;
+    bottom: 60px;
+  }
+
+  figure.project-photo:hover h3 { bottom: 60px; }
+
+  figure.project-photo h3 span {  display: block; }
+
+  figure.project-photo h5 { bottom: 30px; }
+  figure.project-photo:hover h5 { bottom: 30px; }
+
+  .modal-description-heading {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+
+  .modal-description-parragraph { text-align: center; }
 
 }
