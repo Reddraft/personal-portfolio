@@ -395,7 +395,7 @@ min width 1400px  Max Width 1680px
   .preloader .logo {
    height: 6em;
    width: 6em;
-   top: 40%; 
+   top: 40%;
  }
 
   .hero-main-heading {
@@ -463,21 +463,28 @@ min width 1400px  Max Width 1680px
   }
 
   /* works section */
+  .works-wrapper li {
+    width: 33.333vw;
+    height: 100vh;
+  }
 
   figure.project-photo img, figure.project-photo:hover img { transform: scale(1.4); }
 
   figure.project-photo h3 {
-    font-size: 1.7em;
+    font-size: 1em;
     line-height: 120%;
-    bottom: 60px;
+    bottom: 110px;
   }
 
-  figure.project-photo:hover h3 { bottom: 60px; }
+  figure.project-photo:hover h3 { bottom: 110px; }
 
   figure.project-photo h3 span {  display: block; }
 
-  figure.project-photo h5 { bottom: 30px; }
-  figure.project-photo:hover h5 { bottom: 30px; }
+  figure.project-photo h5 {
+    bottom: 80px;
+    font-size: .8em;
+  }
+  figure.project-photo:hover h5 { bottom: 80px; }
 
   .modal-description-heading {
     font-size: 1.6em;
