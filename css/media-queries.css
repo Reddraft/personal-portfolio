@@ -371,6 +371,10 @@ min width 1400px  Max Width 1680px
   and (max-device-width : 767px)
   and (orientation : landscape) {
 
+  body {
+    margin-bottom: 5em;
+  }
+
   /* header section */
   header {
     height: 100vh;
@@ -492,5 +496,35 @@ min width 1400px  Max Width 1680px
   }
 
   .modal-description-parragraph { text-align: center; }
+
+  /* experience section */
+  .experience-wrapper { width: 100%;}
+
+  .experience-wrapper:first-child { margin-bottom: 50px; }
+
+  /* footer section */
+  footer {
+    position: static;
+    padding: 1em 0 1em 0;
+  }
+
+  footer .left-box,
+  footer .right-box {
+    width: 100%;
+  }
+
+  footer .left-box {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    top: 20px;
+  }
+
+  footer .right-box {
+    position: relative;
+    top: 10px;
+  }
+
+  footer h6 { font-size: 4em; }
 
 }
