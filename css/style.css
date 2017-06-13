@@ -573,7 +573,7 @@ nav {
   bottom: 0;
   z-index: 1;
   width: 100%;
-  margin-top: 2.5em;
+  margin: 2.5em 0;
   text-align: center;
 }
 
@@ -582,8 +582,7 @@ nav {
   float:left;
   background-color: #ef463f;
   height: 5em;
-  padding: 0 2em;
-  width: 55%;
+  width: 40%;
 }
 
 .profile-social  li {
@@ -623,8 +622,7 @@ nav {
   float:left;
   background-color: #24202b;
   height: 5em;
-  padding: 0 4em;
-  width: 45%
+  width: 40%;
 
 }
 
@@ -915,14 +913,14 @@ figure.project-photo figcaption a {
 }
 
 .experience-wrapper svg {
-  width: 6em;
-  height: 6em;
+  width: 7em;
+  height: 7em;
   margin-bottom: 1em;
 }
 
 .experience-sub-heading {
   text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   letter-spacing: 2px;
 }
 
