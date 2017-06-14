@@ -33,3 +33,35 @@
   -webkit-animation-delay: 9s;
           animation-delay: 9s;
 }
+
+
+/**** PROFILE ANIMATIONS ******/
+
+/*hide before applaying aimated class*/
+.js-wp-animate-profile-head-shot,
+.js-wp-animate-profile-description,
+.js-wp-animate-social-wrapper  {
+  opacity: 0;
+}
+/*show after applaying animated class*/
+.js-wp-animate-profile-head-shot.animated,
+.js-wp-animate-profile-description.animated,
+.js-wp-animate-social-wrapper.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-profile-head-shot,
+.js-wp-animate-profile-description {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+
+.js-wp-animate-social-wrapper {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}

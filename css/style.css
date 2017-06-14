@@ -250,7 +250,7 @@ nav {
 .menu-button-container span {
   position: absolute;
   background-color: #FFF;
-  height: .15em;
+  height: 2px;
   width: 100%;
   z-index: 300;
   transition: all .25s;

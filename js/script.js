@@ -113,29 +113,39 @@ $(document).ready(function() {
     *******************************/
 
     // header animations
-      $('.js-wp-animate-logo').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-          $(this).removeClass('animated fadeInDown');
-        }
-      );
+    $('.js-wp-animate-logo').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function() {
+        $(this).removeClass('animated fadeInDown');
+      }
+    );
 
-      $('.js-wp-animate-menu').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-          $(this).removeClass('animated fadeInDown');
-        }
-      );
+    $('.js-wp-animate-menu').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function() {
+        $(this).removeClass('animated fadeInDown');
+      }
+    );
 
-      $('.js-wp-animate-hero-sub-heading-1').addClass('animated fadeInDown');
+    $('.js-wp-animate-hero-sub-heading-1').addClass('animated fadeInDown');
 
-      $('.js-wp-animate-hero-main-heading').addClass('animated fadeInDown');
+    $('.js-wp-animate-hero-main-heading').addClass('animated fadeInDown');
 
-      $('.js-wp-animate-hero-sub-heading-2').addClass('animated fadeInDown');
+    $('.js-wp-animate-hero-sub-heading-2').addClass('animated fadeInDown');
 
-      $('.js-wp-animate-scroll-container').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-          $(this).removeClass('animated fadeInDown');
-        }
-      );
+    $('.js-wp-animate-scroll-container').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function() {
+        $(this).removeClass('animated fadeInDown');
+      }
+    );
+
+    // benefits section animations
+    $('.js-section-profile').waypoint(function(direction) {
+      $('.js-wp-animate-profile-head-shot').addClass('animated slideInRight');
+      $('.js-wp-animate-profile-description').addClass('animated slideInLeft');
+      $('.js-wp-animate-social-wrapper').addClass('animated fadeInUp');
+
+    }, {
+      offset: '200px;'
+    });
 
 
 
