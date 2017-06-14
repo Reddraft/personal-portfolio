@@ -1,10 +1,5 @@
 
 
-// $(window).on("load", function() {
-//   $('body').addClass('loaded');
-// });
-
-
 $(document).ready(function() {
 
 
@@ -112,6 +107,37 @@ $(document).ready(function() {
         }
       });
     });
+
+    /******************************
+    *** ANIMATIONS ON PAGE LOAD  **
+    *******************************/
+
+    // header animations
+      $('.js-wp-animate-logo').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+          $(this).removeClass('animated fadeInDown');
+        }
+      );
+
+      $('.js-wp-animate-menu').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+          $(this).removeClass('animated fadeInDown');
+        }
+      );
+
+      $('.js-wp-animate-hero-sub-heading-1').addClass('animated fadeInDown');
+
+      $('.js-wp-animate-hero-main-heading').addClass('animated fadeInDown');
+
+      $('.js-wp-animate-hero-sub-heading-2').addClass('animated fadeInDown');
+
+      $('.js-wp-animate-scroll-container').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+          $(this).removeClass('animated fadeInDown');
+        }
+      );
+
+
 
 
   /*******************************
