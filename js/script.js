@@ -137,7 +137,7 @@ $(document).ready(function() {
       }
     );
 
-    // benefits section animations
+    // profile section animations
     $('.js-section-profile').waypoint(function(direction) {
       $('.js-wp-animate-profile-head-shot').addClass('animated slideInRight');
       $('.js-wp-animate-profile-description').addClass('animated slideInLeft');
@@ -147,6 +147,16 @@ $(document).ready(function() {
       offset: '200px;'
     });
 
+
+    // expeience section animations
+    $('.js-section-experience').waypoint(function(direction) {
+      $('.js-wp-animate-icon').addClass('animated fadeInDown');
+      $('.js-wp-animate-experience-sub-heading').addClass('animated fadeInDown');
+      $('.js-wp-animate-experience-skills').addClass('animated fadeInDown');
+
+    }, {
+      offset: '200px;'
+    });
 
 
 

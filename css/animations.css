@@ -58,10 +58,41 @@
           animation-delay: 1s;
 }
 
-
 .js-wp-animate-social-wrapper {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 2.3s;
-          animation-delay: 2.3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.js-wp-animate-icon,
+.js-wp-animate-experience-sub-heading,
+.js-wp-animate-experience-skills {
+  opacity: 0;
+}
+.js-wp-animate-icon.animated,
+.js-wp-animate-experience-sub-heading.animated,
+.js-wp-animate-experience-skills.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-icon {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.js-wp-animate-experience-sub-heading{
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.js-wp-animate-experience-skills  {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
