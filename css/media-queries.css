@@ -137,12 +137,14 @@ min width 1400px  Max Width 1680px
 
 }
 
-
 /****************************
   Max width 767px
 ****************************/
 
 @media only screen and (max-width: 768px) {
+
+  .social-nav { bottom: 6em; }
+  .social-nav li svg { width: 3.5em; }
 
   .hero-main-heading { font-size: 3em;}
 
