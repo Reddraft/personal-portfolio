@@ -457,6 +457,8 @@ min width 1400px  Max Width 1680px
     width: 3em;
   }
 
+
+
   .sticky .logo-menu-open { top: 2em; }
 
   .menu-button-container { top: 1.4em; }
@@ -489,7 +491,7 @@ min width 1400px  Max Width 1680px
   .main-nav ul li a { font-size: 1.6em; }
 
   .social-nav { bottom: 1.5em; }
-
+  .social-nav li svg { width: 2em; }
 
   /* profile section */
   .section-profile {
