@@ -298,11 +298,11 @@ min width 1400px  Max Width 1680px
     left: 5%;
   }
 
-  .main-nav { top: 50%; }
+  .main-nav { top: 45%; }
 
-  .social-nav { bottom: 20%; }
+  .social-nav { bottom: 25%; }
 
-  .social-nav li svg { width: 2em; }
+  .social-nav li svg { width: 2.5em; }
 
   .sticky .menu-button-container.active {
     top: 35px;
@@ -493,7 +493,7 @@ min width 1400px  Max Width 1680px
   .main-nav ul li a { font-size: 1.6em; }
 
   .social-nav { bottom: 1.5em; }
-  .social-nav li svg { width: 2em; }
+  .social-nav li svg { width: 2.5em; }
 
   /* profile section */
   .section-profile {
