@@ -302,6 +302,8 @@ min width 1400px  Max Width 1680px
 
   .social-nav { bottom: 20%; }
 
+  .social-nav li svg { width: 2em; }
+
   .sticky .menu-button-container.active {
     top: 35px;
     right: 5%;
