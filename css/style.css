@@ -238,7 +238,7 @@ display: inline-block;
 position: fixed;
 right: 0;
 top: 150px;
-z-index:100;
+z-index: 20;
 }
 
 /********* Button Nav When Active Class is not applied **********/
@@ -735,8 +735,8 @@ figure.project-photo img {
   position: absolute;
   top: 1.7em;
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   opacity: 1;
   transform: scale(1.1);
   transition: all .5s;

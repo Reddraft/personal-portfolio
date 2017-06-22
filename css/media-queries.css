@@ -111,18 +111,21 @@ min width 1400px  Max Width 1680px
   .tilt__back, .tilt__front { background-size: 100%; }
 
   /* works section */
+
+
   figure.project-photo img { transform: scale(1.7); }
 
   figure.project-photo h3 {
     left: 40px;
-    font-size: 1.9em;
+    font-size: 2em;
     bottom: 100px;
   }
 
   figure.project-photo h5 {
-    left: 35px;
+    left: 40px;
     bottom: 60px;
     opacity: 1;
+    font-size: .9em;
   }
 
   .social-wrapper {
@@ -204,6 +207,11 @@ min width 1400px  Max Width 1680px
     text-align: center;
   }
 
+  figure.project-photo img {
+    width: 100%;
+    height: auto;
+  }
+
   figure.project-photo img,
   figure.project-photo:hover img { transform: scale(1.1); }
 
@@ -216,7 +224,15 @@ min width 1400px  Max Width 1680px
     transform: translateX(-50%);
   }
 
-  figure.project-photo h3 { font-size: 2em; }
+  figure.project-photo h3 {
+    font-size: 2.5em;
+    bottom: 150px;
+  }
+
+  figure.project-photo h5 {
+    font-size: 1.3em;
+    bottom: 100px;
+  }
 
   figure.project-photo h3 span { display: inline; }
 
@@ -392,7 +408,11 @@ min width 1400px  Max Width 1680px
 
   figure.project-photo h3 span {  display: block; }
 
-  figure.project-photo h5 { bottom: 30px; }
+  figure.project-photo h5 {
+    font-size: .9em;
+    bottom: 30px;
+  }
+
   figure.project-photo:hover h5 { bottom: 30px; }
 
   .modal-description-heading {
