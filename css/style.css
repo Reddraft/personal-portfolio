@@ -735,8 +735,8 @@ figure.project-photo img {
   position: absolute;
   top: 1.7em;
   display: block;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   opacity: 1;
   transform: scale(1.1);
   transition: all .5s;
