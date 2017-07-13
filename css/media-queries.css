@@ -74,8 +74,8 @@ min width 1400px  Max Width 1680px
 ****************************/
 @media only screen and (max-width: 1366px) {
   figure.project-photo img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
